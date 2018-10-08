@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-5 14:59:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.me.domain.User" table="USER">
+        <id name="userId" type="java.lang.Integer">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <set name="setBank" table="BANKCARD" inverse="true" cascade="delete" lazy="false">
+            <key>
+                <column name="USERID" />
+            </key>
+            <one-to-many class="com.me.domain.BankCard"/>
+        </set>
+    </class>
+</hibernate-mapping>

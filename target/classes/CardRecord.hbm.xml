@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-5 14:59:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.me.domain.CardRecord" table="CARDRECORD">
+        <id name="recordId" type="java.lang.Integer">
+            <column name="RECORDID" />
+            <generator class="identity" />
+        </id>
+        <property name="record" type="java.lang.String">
+            <column name="RECORD" />
+        </property>
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        <many-to-one name="bankCard" class="com.me.domain.BankCard">
+            <column name="BANKCARD" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
