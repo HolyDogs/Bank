@@ -1,42 +1,42 @@
 # Bank
-## ����ϵͳ##
+## 银行系统##
 
 =============================
 
 ##### Author@HolyDogs
-?
-### ����ܡ�
+
+### 框架
 Struts2+Spring+Hibernate
 
-### `����`��
+### 功能：
 
 ------------------------
 ?
-�����û�����Ա�û�CRUD��������ѯ��ҳ���ܣ���ͨ�û���ǮȡǮת�˹��ܣ���ͬʱ��¼�����ݿ��С�ʹ����ajax�첽����ֲ�ˢ��ҳ�桢javascript��css��maven�ȼ�����
+银行用户管理员用户CRUD管理、查询分页功能，普通用户存钱取钱转账功能，并同时记录在数据库中。使用了ajax异步请求局部刷新页面、javascript、css、maven等技术。
 ?
 
-### ����ػ�����:
-?
-��Spring 4.3.7
+### 【相关环境】:
 
-��Struts 2.5.17
+·Spring 4.3.7
 
-��Hibernate 5.3.6
+·Struts 2.5.17
 
-��java8
+·Hibernate 5.3.6
 
-��Apache Tomcat v9.0
+·java8
 
-��Apache Maven 3.5.4
+·Apache Tomcat v9.0
 
-��MySQL 8.0
+·Apache Maven 3.5.4
+
+·MySQL 8.0
 .....
 
-#### �����ܽ�
-����ĿΪSSH���ʵ����Ŀ����Ϊ�����Լ�����ϤSSH��ܿ��������кܶ಻��֮����������ͨ�û����ֿ����Ļ��������ƣ����ּ򵥹����Թ�δʵ�֣������Լ�ª.....��֮���������Ͱɡ�
+#### 个人总结
+本项目为SSH框架实践项目，是为了让自己更熟悉SSH框架开发，还有很多不足之处。比如普通用户部分开发的还不够完善，部分简单功能略过未实现，界面略简陋.....总之，继续加油吧。
 
-### ����ʾ�� 
-#### ��½
+### 【演示】 
+#### 登陆
 ![image](https://github.com/HolyDogs/Bank/raw/master/READMEIMG/1.png) 
 ![](https://github.com/HolyDogs/Bank/raw/master/READMEIMG/2.png)
 ![](https://github.com/HolyDogs/Bank/raw/master/READMEIMG/3.png)
